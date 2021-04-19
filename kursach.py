@@ -16,7 +16,7 @@ connection = pymysql.connect(
 )
 cur = connection.cursor()
 
-bot = telebot.TeleBot('1496730432:AAEj7nuK144ldTgtEKZW2e1rXIUMgJuk0iE')
+bot = telebot.TeleBot(os.getenv('API_KEY'))
 
 def update_keyboard():
     brands = []
